@@ -10,7 +10,7 @@ function Intro() {
   return (
     <section className="hero">
       <h1 className="title">
-        <Link href="/" className="hover:underline">
+        <Link href="/">
           Year in music.
         </Link>
       </h1>
@@ -26,7 +26,7 @@ export default async function Page() {
   const allPosts = await getAllAlbumPosts(isEnabled)
 
   return (
-    <div className="container mx-auto px-5">
+    <div>
       <Intro />
       <section className="home-albums">
         <Albums posts={allPosts} />

@@ -3,8 +3,6 @@ import CoverImage from './cover-image'
 import ContentfulImage from "../lib/contentful-image"
 import FavoriteImage from "../assets/favorite.svg"
 
-
-
 const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
 ];
@@ -21,8 +19,6 @@ export default function AlbumCard({
   title: string
   coverImage: any
   date: string
-  // excerpt: string
-  // author: any
   slug: string
   releaseYear: number
   artistName: string

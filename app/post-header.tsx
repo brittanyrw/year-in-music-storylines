@@ -4,19 +4,20 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
 ];
 
-export default function PostHeader({ title, coverImage, date, artist, category } : {
+export default function PostHeader({ title, coverImage, date, artist, category, favoriteMonth } : {
   title: string
   coverImage: string
   date: string
   artist: string
-  category: []
+  category: [],
+  favoriteMonth: string
 }) {
   return (
     <>
       <div className="album-page-header">
         <CoverImage title={title} url={coverImage} height="400" width="400" className="album-page-image" />
         <div className="album-page-info">
-          <h2>{monthNames[new Date(date).getUTCMonth()]}</h2>
+          <h2>{monthNames[new Date(favoriteMonth).getUTCMonth()]}</h2>
           <h1>{title} ({date})</h1>
           <p className="album-page-subtitle">{artist}</p>
           <ul className="music-labels">

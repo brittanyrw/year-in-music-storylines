@@ -12,6 +12,17 @@ favorite
 category
 thoughts {
   json
+  links {
+    assets {
+      block {
+        sys {
+          id
+        }
+        url
+        description
+      }
+    }
+  }
 }
 `
 

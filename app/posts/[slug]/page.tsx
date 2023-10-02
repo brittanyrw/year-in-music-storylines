@@ -1,18 +1,11 @@
 import Link from 'next/link'
 import { draftMode } from 'next/headers'
 
-import MoreStories from '../../more-stories'
-import Avatar from '../../avatar'
-import Date from '../../date'
 import Albums from '../../albums'
 import PostHeader from '../../post-header'
 
 import { Markdown } from '@/lib/markdown'
-import { getAllPosts, getPostAndMorePosts, getAllAlbumPosts, getPostAndMoreAlbumPosts } from '@/lib/api'
-
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import { BLOCKS } from '@contentful/rich-text-types'
-import markdownStyles from './markdown-styles.module.css'
+import { getAllAlbumPosts, getPostAndMoreAlbumPosts } from '@/lib/api'
 
 export async function generateStaticParams() {
   const allPosts = await getAllAlbumPosts(false)
@@ -21,8 +14,6 @@ export async function generateStaticParams() {
     slug: post.slug,
   }))
 }
-
-
 
 export default async function PostPage({
   params,
@@ -53,6 +44,7 @@ export default async function PostPage({
                 title={post.name}
                 coverImage={post.albumCover.url}
                 date={post.releaseYear}
+                favoriteMonth={post.favoriteMonth}
                 artist={post.artistName}
                 category={post.category}
               />

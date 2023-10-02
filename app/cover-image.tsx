@@ -20,9 +20,6 @@ export default function CoverImage({
       priority
       width={400}
       height={400}
-      className={cn('shadow-small', {
-        'hover:shadow-medium transition-shadow duration-200': slug,
-      })}
       src={url}
     />
   )
