@@ -43,18 +43,6 @@ h1 {
   padding: 20px;
 }
 
-.contentful-image-container {
-  position: relative;
-  height: auto;
-  max-width: 400px;
-}
-
-.contentful-image-container img {
-  width: 100% !important;
-  position: relative !important;
-  height: auto !important;
-}
-
 .contentful-image {
   height: auto;
   width: 100%;
@@ -388,7 +376,7 @@ footer {
   }
 }
 
-img {
+/* img {
   width: auto;
   height: 300px;
-}
+} */

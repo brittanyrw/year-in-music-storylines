@@ -33,7 +33,7 @@ export default async function PostPage({
   const { post, morePosts } = await getPostAndMoreAlbumPosts(params.slug, isEnabled)
 
   return (
-    <div className="container mx-auto px-5">
+    <div className="page">
       <section className="page-header">
           <h2>
             <Link href="/">
