@@ -15,7 +15,7 @@ function Footer() {
         <p>Built with Next.js and Contentful.</p>
       </div>
       <div className="footer-link">
-        <a href="https://github.com/brittanyrw/year-in-music-2023" target="_blank">GitHub</a>
+        <a href="https://github.com/brittanyrw/storylines-workshop" target="_blank">GitHub</a>
       </div>
     </footer>
   )

@@ -31,7 +31,6 @@ export default function AlbumCard({
         {favorite && <div className="favorite">
           <ContentfulImage
             src={FavoriteImage}
-            width="100"
             height="100"
             className="rounded-full"
             alt="favorite image tag"
