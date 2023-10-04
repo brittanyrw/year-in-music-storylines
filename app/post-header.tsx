@@ -15,7 +15,7 @@ export default function PostHeader({ title, coverImage, date, artist, category, 
   return (
     <>
       <div className="album-page-header">
-        <CoverImage title={title} url={coverImage} height="400" width="400" className="album-page-image" />
+        <CoverImage title={title} url={coverImage} />
         <div className="album-page-info">
           <h2>{monthNames[new Date(favoriteMonth).getUTCMonth()]}</h2>
           <h1>{title} ({date})</h1>
