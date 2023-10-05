@@ -6,13 +6,13 @@
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "p5asbbjx1p90"
+            "id": "ik5td6x5jo3k"
           }
         },
-        "id": "author",
+        "id": "album",
         "type": "ContentType",
-        "createdAt": "2020-04-22T09:32:50.535Z",
-        "updatedAt": "2020-04-22T09:32:50.885Z",
+        "createdAt": "2023-09-29T13:23:43.083Z",
+        "updatedAt": "2023-09-29T15:41:27.162Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -20,35 +20,35 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 1,
-        "publishedAt": "2020-04-22T09:32:50.885Z",
-        "firstPublishedAt": "2020-04-22T09:32:50.885Z",
+        "publishedVersion": 5,
+        "publishedAt": "2023-09-29T15:41:27.162Z",
+        "firstPublishedAt": "2023-09-29T13:23:43.482Z",
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "70STWVx9vnqJ9tmgXWG1st"
           }
         },
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "70STWVx9vnqJ9tmgXWG1st"
           }
         },
-        "publishedCounter": 1,
-        "version": 2,
+        "publishedCounter": 3,
+        "version": 6,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "70STWVx9vnqJ9tmgXWG1st"
           }
         }
       },
       "displayField": "name",
-      "name": "Author",
+      "name": "Album",
       "description": "",
       "fields": [
         {
@@ -56,82 +56,9 @@
           "name": "Name",
           "type": "Symbol",
           "localized": false,
-          "required": true,
-          "validations": [],
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "picture",
-          "name": "Picture",
-          "type": "Link",
-          "localized": false,
-          "required": true,
-          "validations": [],
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Asset"
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "p5asbbjx1p90"
-          }
-        },
-        "id": "post",
-        "type": "ContentType",
-        "createdAt": "2020-04-22T09:34:36.878Z",
-        "updatedAt": "2020-04-22T12:23:57.726Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 3,
-        "publishedAt": "2020-04-22T12:23:57.726Z",
-        "firstPublishedAt": "2020-04-22T09:34:37.228Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
-          }
-        },
-        "publishedCounter": 2,
-        "version": 4,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
-          }
-        }
-      },
-      "displayField": "title",
-      "name": "Post",
-      "description": "",
-      "fields": [
-        {
-          "id": "title",
-          "name": "Title",
-          "type": "Symbol",
-          "localized": false,
-          "required": true,
-          "validations": [],
+          "required": false,
+          "validations": [
+          ],
           "disabled": false,
           "omitted": false
         },
@@ -140,21 +67,74 @@
           "name": "Slug",
           "type": "Symbol",
           "localized": false,
-          "required": true,
-          "validations": [],
+          "required": false,
+          "validations": [
+          ],
           "disabled": false,
           "omitted": false
         },
         {
-          "id": "content",
-          "name": "Content",
+          "id": "albumCover",
+          "name": "Album Cover",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "releaseYear",
+          "name": "Release Year",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "artistName",
+          "name": "Artist Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "favoriteMonth",
+          "name": "Favorite Month",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "thoughts",
+          "name": "Thoughts",
           "type": "RichText",
           "localized": false,
-          "required": true,
+          "required": false,
           "validations": [
             {
-              "enabledMarks": ["bold", "italic", "underline", "code"],
-              "message": "Only bold, italic, underline, and code marks are allowed"
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, and subscript marks are allowed"
             },
             {
               "enabledNodeTypes": [
@@ -170,18 +150,20 @@
                 "blockquote",
                 "embedded-entry-block",
                 "embedded-asset-block",
+                "table",
                 "hyperlink",
                 "entry-hyperlink",
                 "asset-hyperlink",
                 "embedded-entry-inline"
               ],
-              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
             },
             {
               "nodes": {
                 "asset-hyperlink": [
                   {
                     "size": {
+                      "min": 0,
                       "max": 10
                     },
                     "message": null
@@ -190,7 +172,8 @@
                 "embedded-asset-block": [
                   {
                     "size": {
-                      "max": 10
+                      "min": 0,
+                      "max": 9
                     },
                     "message": null
                   }
@@ -198,6 +181,7 @@
                 "embedded-entry-block": [
                   {
                     "size": {
+                      "min": 0,
                       "max": 10
                     },
                     "message": null
@@ -206,6 +190,7 @@
                 "embedded-entry-inline": [
                   {
                     "size": {
+                      "min": 0,
                       "max": 10
                     },
                     "message": null
@@ -214,6 +199,7 @@
                 "entry-hyperlink": [
                   {
                     "size": {
+                      "min": 0,
                       "max": 10
                     },
                     "message": null
@@ -226,53 +212,50 @@
           "omitted": false
         },
         {
-          "id": "excerpt",
-          "name": "Excerpt",
-          "type": "Symbol",
+          "id": "category",
+          "name": "Category",
+          "type": "Array",
           "localized": false,
-          "required": true,
-          "validations": [],
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "coverImage",
-          "name": "Cover Image",
-          "type": "Link",
-          "localized": false,
-          "required": true,
-          "validations": [],
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Asset"
-        },
-        {
-          "id": "date",
-          "name": "Date",
-          "type": "Date",
-          "localized": false,
-          "required": true,
-          "validations": [],
-          "disabled": false,
-          "omitted": false
-        },
-        {
-          "id": "author",
-          "name": "Author",
-          "type": "Link",
-          "localized": false,
-          "required": true,
+          "required": false,
           "validations": [
-            {
-              "linkContentType": ["author"]
-            }
           ],
           "disabled": false,
           "omitted": false,
-          "linkType": "Entry"
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": [
+                  "Chill",
+                  "Hype",
+                  "Pop",
+                  "English",
+                  "Live",
+                  "Angsty",
+                  "Happy",
+                  "Emo",
+                  "Rock",
+                  "Classic"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "favorite",
+          "name": "Favorite",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
         }
       ]
     }
+  ],
+  "tags": [
   ],
   "editorInterfaces": [
     {
@@ -281,31 +264,31 @@
         "type": "EditorInterface",
         "space": {
           "sys": {
-            "id": "p5asbbjx1p90",
+            "id": "ik5td6x5jo3k",
             "type": "Link",
             "linkType": "Space"
           }
         },
-        "version": 2,
-        "createdAt": "2020-04-22T09:32:50.954Z",
+        "version": 7,
+        "createdAt": "2023-09-29T13:23:43.683Z",
         "createdBy": {
           "sys": {
-            "id": "066RqBikAjzKy0SWUEtFvH",
+            "id": "70STWVx9vnqJ9tmgXWG1st",
             "type": "Link",
             "linkType": "User"
           }
         },
-        "updatedAt": "2020-04-22T09:32:51.642Z",
+        "updatedAt": "2023-10-04T05:41:39.709Z",
         "updatedBy": {
           "sys": {
-            "id": "066RqBikAjzKy0SWUEtFvH",
+            "id": "70STWVx9vnqJ9tmgXWG1st",
             "type": "Link",
             "linkType": "User"
           }
         },
         "contentType": {
           "sys": {
-            "id": "author",
+            "id": "album",
             "type": "Link",
             "linkType": "ContentType"
           }
@@ -318,65 +301,35 @@
           }
         }
       },
+      "sidebar": [
+        {
+          "widgetId": "publication-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "3iszK8Gl7aaxLvxGyCOhgA",
+          "widgetNamespace": "app"
+        },
+        {
+          "widgetId": "content-preview-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "incoming-links-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "translation-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "versions-widget",
+          "widgetNamespace": "sidebar-builtin"
+        }
+      ],
       "controls": [
         {
           "fieldId": "name",
-          "widgetId": "singleLine",
-          "widgetNamespace": "builtin"
-        },
-        {
-          "fieldId": "picture",
-          "widgetId": "assetLinkEditor",
-          "widgetNamespace": "builtin"
-        }
-      ]
-    },
-    {
-      "sys": {
-        "id": "default",
-        "type": "EditorInterface",
-        "space": {
-          "sys": {
-            "id": "p5asbbjx1p90",
-            "type": "Link",
-            "linkType": "Space"
-          }
-        },
-        "version": 4,
-        "createdAt": "2020-04-22T09:34:37.309Z",
-        "createdBy": {
-          "sys": {
-            "id": "066RqBikAjzKy0SWUEtFvH",
-            "type": "Link",
-            "linkType": "User"
-          }
-        },
-        "updatedAt": "2020-04-22T12:23:58.324Z",
-        "updatedBy": {
-          "sys": {
-            "id": "066RqBikAjzKy0SWUEtFvH",
-            "type": "Link",
-            "linkType": "User"
-          }
-        },
-        "contentType": {
-          "sys": {
-            "id": "post",
-            "type": "Link",
-            "linkType": "ContentType"
-          }
-        },
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        }
-      },
-      "controls": [
-        {
-          "fieldId": "title",
           "widgetId": "singleLine",
           "widgetNamespace": "builtin"
         },
@@ -386,31 +339,3887 @@
           "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "content",
-          "widgetId": "richTextEditor",
-          "widgetNamespace": "builtin"
-        },
-        {
-          "fieldId": "excerpt",
-          "widgetId": "singleLine",
-          "widgetNamespace": "builtin"
-        },
-        {
-          "fieldId": "coverImage",
+          "fieldId": "albumCover",
           "widgetId": "assetLinkEditor",
           "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "date",
+          "fieldId": "releaseYear",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "artistName",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "favoriteMonth",
+          "settings": {
+            "ampm": "24",
+            "format": "dateonly"
+          },
           "widgetId": "datePicker",
           "widgetNamespace": "builtin"
         },
         {
-          "fieldId": "author",
-          "widgetId": "entryLinkEditor",
+          "fieldId": "thoughts",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "category",
+          "widgetId": "checkbox",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "favorite",
+          "widgetId": "boolean",
           "widgetNamespace": "builtin"
         }
       ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "6LcawJlVl9R6orSvNnUnyT",
+        "type": "Entry",
+        "createdAt": "2023-09-29T14:02:37.345Z",
+        "updatedAt": "2023-10-02T17:29:33.112Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2023-10-02T17:29:33.112Z",
+        "firstPublishedAt": "2023-09-29T14:03:12.068Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "album"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Homecoming"
+        },
+        "slug": {
+          "en-US": "homecoming"
+        },
+        "albumCover": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7s7COjmoamnKYPZC3pXD7S"
+            }
+          }
+        },
+        "releaseYear": {
+          "en-US": 2021
+        },
+        "artistName": {
+          "en-US": "Beyonce"
+        },
+        "favoriteMonth": {
+          "en-US": "2023-01-01"
+        },
+        "thoughts": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Homecoming: The Live Album",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " (stylized in all caps) is the fifth live album by ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://www.last.fm/music/Beyonc%C3%A9"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Beyoncé",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ". Recorded in April 2018 at the Coachella Valley Music and Arts Festival in Indio, California, the album features the entirety of Beyoncé's performance at the festival, which has since been described as \"historic\" by a number of music critics and media outlets.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "category": {
+          "en-US": [
+            "Hype",
+            "English",
+            "Live"
+          ]
+        },
+        "favorite": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "3uxOoMR0rkgKGDAvp2eHXF",
+        "type": "Entry",
+        "createdAt": "2023-09-29T14:58:04.281Z",
+        "updatedAt": "2023-10-04T23:04:14.709Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 21,
+        "publishedAt": "2023-10-04T23:04:14.709Z",
+        "firstPublishedAt": "2023-09-29T14:58:32.612Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 6,
+        "version": 22,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "album"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "24k Magic"
+        },
+        "slug": {
+          "en-US": "24k-magic"
+        },
+        "albumCover": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "589u7QwrkttliuMoPIPYf3"
+            }
+          }
+        },
+        "releaseYear": {
+          "en-US": 2016
+        },
+        "artistName": {
+          "en-US": "Bruno Mars"
+        },
+        "favoriteMonth": {
+          "en-US": "2023-02-04"
+        },
+        "thoughts": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "24K Magic",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " (stylized as ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "XXIVK Magic",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ") is the third studio album by American singer-songwriter ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Bruno_Mars"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Bruno Mars",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ". It was released by ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Atlantic_Records"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Atlantic Records",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " on November 18, 2016. ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "category": {
+          "en-US": [
+            "Hype",
+            "Happy"
+          ]
+        },
+        "favorite": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "2b6BIDyH2VsYt4wRfn9ZhQ",
+        "type": "Entry",
+        "createdAt": "2023-09-29T15:58:34.552Z",
+        "updatedAt": "2023-10-02T17:40:55.213Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2023-10-02T17:40:55.213Z",
+        "firstPublishedAt": "2023-09-29T15:59:07.629Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "album"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Queen II"
+        },
+        "slug": {
+          "en-US": "queen-ii"
+        },
+        "albumCover": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5nMCcKQCqWZGqWOygS1jgn"
+            }
+          }
+        },
+        "releaseYear": {
+          "en-US": 1974
+        },
+        "artistName": {
+          "en-US": "Queen"
+        },
+        "favoriteMonth": {
+          "en-US": "2023-03-04"
+        },
+        "thoughts": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Queen II",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " is the second studio album by the British ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Rock_music"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "rock",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " band ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Queen_(band)"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Queen",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ". It was released on 8 March 1974 by ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/EMI_Records"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "EMI Records",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " in the UK and ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Elektra_Records"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Elektra Records",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " in the US. ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "category": {
+          "en-US": [
+            "Angsty",
+            "Rock",
+            "Classic"
+          ]
+        },
+        "favorite": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "3CoyiZSMJ7yCSG5mn0a8A8",
+        "type": "Entry",
+        "createdAt": "2023-09-29T15:59:09.566Z",
+        "updatedAt": "2023-10-02T17:40:05.390Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2023-10-02T17:40:05.390Z",
+        "firstPublishedAt": "2023-09-29T15:59:36.989Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "album"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Midnights"
+        },
+        "slug": {
+          "en-US": "midnights"
+        },
+        "albumCover": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3kca3hQXttBXyp5ywsENqn"
+            }
+          }
+        },
+        "releaseYear": {
+          "en-US": 2022
+        },
+        "artistName": {
+          "en-US": "Taylor Swift"
+        },
+        "favoriteMonth": {
+          "en-US": "2023-04-02"
+        },
+        "thoughts": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Midnights",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " is the tenth studio album by American singer-songwriter ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Taylor_Swift"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Taylor Swift",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ", released on October 21, 2022, via ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Republic_Records"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Republic Records",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ". Announced at the ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/2022_MTV_Video_Music_Awards"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "2022 MTV Video Music Awards",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ", ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Midnights",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " marked Swift's first new body of work since her 2020 ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Indie_folk"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "indie folk",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " albums, ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Folklore_(Taylor_Swift_album)"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                          {
+                            "type": "italic"
+                          }
+                        ],
+                        "value": "Folklore",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " and ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Evermore_(Taylor_Swift_album)"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                          {
+                            "type": "italic"
+                          }
+                        ],
+                        "value": "Evermore",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ". ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "category": {
+          "en-US": [
+            "Angsty",
+            "Pop"
+          ]
+        },
+        "favorite": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "1HoTCT4tVbQXJzSLfH1Ck9",
+        "type": "Entry",
+        "createdAt": "2023-09-29T16:06:14.428Z",
+        "updatedAt": "2023-10-02T17:36:23.496Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2023-10-02T17:36:23.496Z",
+        "firstPublishedAt": "2023-09-29T16:07:56.205Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "album"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Whitney"
+        },
+        "slug": {
+          "en-US": "whitney"
+        },
+        "albumCover": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2yBxgFXVVIb06fO1k118ew"
+            }
+          }
+        },
+        "releaseYear": {
+          "en-US": 1987
+        },
+        "artistName": {
+          "en-US": "Whitney Houston"
+        },
+        "favoriteMonth": {
+          "en-US": "2023-05-07"
+        },
+        "thoughts": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Whitney",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " is the second studio album by American singer ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Whitney_Houston"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Whitney Houston",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ", released on June 2, 1987, by ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Arista_Records"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Arista Records",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " as the follow-up to ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Whitney_Houston_(album)"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "her debut album",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ". ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "category": {
+          "en-US": [
+            "Pop",
+            "Happy"
+          ]
+        },
+        "favorite": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "2An8cE7Imc9FcqNDW0buGm",
+        "type": "Entry",
+        "createdAt": "2023-09-29T16:06:40.963Z",
+        "updatedAt": "2023-10-02T17:57:49.948Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "publishedAt": "2023-10-02T17:57:49.948Z",
+        "firstPublishedAt": "2023-09-29T16:07:04.159Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 16,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "album"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Hadestown"
+        },
+        "slug": {
+          "en-US": "hadestown"
+        },
+        "albumCover": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "15L41GYl0YYM8RCr5pv41D"
+            }
+          }
+        },
+        "releaseYear": {
+          "en-US": 2019
+        },
+        "artistName": {
+          "en-US": "Original Broadway Cast"
+        },
+        "favoriteMonth": {
+          "en-US": "2023-06-04"
+        },
+        "thoughts": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Hadestown (Original Broadway Cast Recording)",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " is the official recording of the ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Broadway_theatre"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Broadway",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " production of ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "Hadestown.",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "category": {
+          "en-US": [
+            "Angsty"
+          ]
+        },
+        "favorite": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "2ZYwN7HPW7rWORhxIPI7GX",
+        "type": "Entry",
+        "createdAt": "2023-09-29T16:07:05.806Z",
+        "updatedAt": "2023-10-02T17:35:06.697Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 12,
+        "publishedAt": "2023-10-02T17:35:06.697Z",
+        "firstPublishedAt": "2023-09-29T16:07:56.262Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 13,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "album"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Amor Prohibido"
+        },
+        "slug": {
+          "en-US": "amor-prohibido"
+        },
+        "albumCover": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1L2r1FJZr9QKW7qKpVuyZf"
+            }
+          }
+        },
+        "releaseYear": {
+          "en-US": 1994
+        },
+        "artistName": {
+          "en-US": "Selena"
+        },
+        "favoriteMonth": {
+          "en-US": "2023-07-02"
+        },
+        "thoughts": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Amor Prohibido",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " (English: ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "Forbidden Love",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ") is the fourth studio album by American singer ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Selena"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Selena",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ", released on March 22, 1994, by ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/EMI_Latin"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "EMI Latin",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ".",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "category": {
+          "en-US": [
+            "Angsty",
+            "Pop",
+            "Classic"
+          ]
+        },
+        "favorite": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "3houSFBPJBSkXhUYjGRGRE",
+        "type": "Entry",
+        "createdAt": "2023-09-29T16:07:21.369Z",
+        "updatedAt": "2023-10-02T17:37:31.164Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2023-10-02T17:37:31.164Z",
+        "firstPublishedAt": "2023-09-29T16:07:48.581Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "album"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "The Miseducation of Lauryn Hill"
+        },
+        "slug": {
+          "en-US": "the-miseducation-of-lauryn-hill"
+        },
+        "albumCover": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6dGEUksvVobXtvDg1FaKN"
+            }
+          }
+        },
+        "releaseYear": {
+          "en-US": 1998
+        },
+        "artistName": {
+          "en-US": "Layurn Hill"
+        },
+        "favoriteMonth": {
+          "en-US": "2023-08-06"
+        },
+        "thoughts": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "The Miseducation of Lauryn Hill",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " is the only solo album by American singer and rapper ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Lauryn_Hill"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Lauryn Hill",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ". It was released on August 25, 1998, by ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Ruffhouse_Records"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Ruffhouse Records",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " and ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Columbia_Records"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Columbia Records",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ". ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "category": {
+          "en-US": [
+            "English",
+            "Angsty"
+          ]
+        },
+        "favorite": {
+          "en-US": false
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "2VP0iFBcYot85Ga8WRgEBI",
+        "type": "Entry",
+        "createdAt": "2023-09-29T16:13:03.508Z",
+        "updatedAt": "2023-10-02T17:30:55.309Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 12,
+        "publishedAt": "2023-10-02T17:30:55.309Z",
+        "firstPublishedAt": "2023-09-29T16:13:42.226Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 13,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "album"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Bullet in a Bible"
+        },
+        "slug": {
+          "en-US": "bullet-in-a-bible"
+        },
+        "albumCover": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "63XIHSjo25zQIM5cOaEGcS"
+            }
+          }
+        },
+        "releaseYear": {
+          "en-US": 2005
+        },
+        "artistName": {
+          "en-US": "Green Day"
+        },
+        "favoriteMonth": {
+          "en-US": "2023-10-08"
+        },
+        "thoughts": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Bullet in a Bible",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " is a ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Live_album"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "live album",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " by American ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Rock_music"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "rock",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " band ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Green_Day"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Green Day",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ", released on November 15, 2005, by ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Reprise_Records"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Reprise Records",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ". It was directed by ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Samuel_Bayer"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Samuel Bayer",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ", who was the director of all the videos from ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/American_Idiot"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "American Idiot",
+                        "marks": [
+                          {
+                            "type": "italic"
+                          }
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ".",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "category": {
+          "en-US": [
+            "Live",
+            "Angsty",
+            "Rock"
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "6zirx0qJJCF5b52E4TxUJC",
+        "type": "Entry",
+        "createdAt": "2023-09-29T16:16:42.225Z",
+        "updatedAt": "2023-10-02T17:39:20.604Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2023-10-02T17:39:20.604Z",
+        "firstPublishedAt": "2023-09-29T16:18:02.658Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "album"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "I Am"
+        },
+        "slug": {
+          "en-US": "i-am"
+        },
+        "albumCover": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "vAtUtnXyBpDbyuBhf8Mq8"
+            }
+          }
+        },
+        "releaseYear": {
+          "en-US": 1979
+        },
+        "artistName": {
+          "en-US": "Earth, Wind & Fire"
+        },
+        "favoriteMonth": {
+          "en-US": "2023-11-19"
+        },
+        "thoughts": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "I Am",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " is the ninth studio album by the American band ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Earth,_Wind_%26_Fire"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Earth, Wind & Fire",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " released in June 1979 on ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/ARC_Records"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "ARC",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "/",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Columbia_Records"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Columbia Records",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ". The LP rose to number 1 on the ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Billboard_(magazine)"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Billboard",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Top_R%26B/Hip-Hop_Albums"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Top Soul Albums",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " chart and number 3 on the ",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Billboard_200"
+                    },
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Billboard 200",
+                        "marks": [
+                        ],
+                        "data": {
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " chart.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "category": {
+          "en-US": [
+            "Classic"
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "3dJssenQzfI69kXkMa1zQS",
+        "type": "Entry",
+        "createdAt": "2023-09-29T16:17:23.143Z",
+        "updatedAt": "2023-10-02T17:39:20.552Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2023-10-02T17:39:20.552Z",
+        "firstPublishedAt": "2023-09-29T16:17:55.124Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "album"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Young Forever"
+        },
+        "slug": {
+          "en-US": "young-forever"
+        },
+        "albumCover": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6nZkScKC9eVKIYh4pDmkKj"
+            }
+          }
+        },
+        "releaseYear": {
+          "en-US": 2016
+        },
+        "artistName": {
+          "en-US": "BTS"
+        },
+        "favoriteMonth": {
+          "en-US": "2023-12-31"
+        },
+        "thoughts": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      },
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "The Most Beautiful Moment in Life: Young Forever",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " is the first Korean-language ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Compilation_album"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "compilation album",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " by South Korean ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/Boy_band"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "boy band",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://en.wikipedia.org/wiki/BTS"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "BTS",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ". The album was released on May 2, 2016 in two physical configurations, a day version and a night version.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "category": {
+          "en-US": [
+            "Pop"
+          ]
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "3NHocaLcwQjNwgV506yvMp",
+        "type": "Entry",
+        "createdAt": "2023-09-29T16:19:26.550Z",
+        "updatedAt": "2023-10-02T17:39:20.643Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2023-10-02T17:39:20.643Z",
+        "firstPublishedAt": "2023-09-29T16:19:57.462Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "album"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "21"
+        },
+        "slug": {
+          "en-US": "21"
+        },
+        "albumCover": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4lDgWBUp2ewiqZswct4kTZ"
+            }
+          }
+        },
+        "releaseYear": {
+          "en-US": 2011
+        },
+        "artistName": {
+          "en-US": "Adele"
+        },
+        "favoriteMonth": {
+          "en-US": "2023-09-17"
+        },
+        "thoughts": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "21 is the second studio album by English singer-songwriter ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://www.last.fm/music/Adele"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Adele",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ". It was released on 24 January 2011 in Europe and on 22 February 2011 in North America by XL Recordings and Columbia Records. The album was named after the age of the singer during its production. ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "category": {
+          "en-US": [
+            "Angsty",
+            "Pop"
+          ]
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "35Cv1COqqtLN6JXgEw6JNH",
+        "type": "Asset",
+        "createdAt": "2023-09-27T15:10:17.902Z",
+        "updatedAt": "2023-09-27T15:10:33.633Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-09-27T15:10:33.633Z",
+        "firstPublishedAt": "2023-09-27T15:10:33.633Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Me"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ik5td6x5jo3k/35Cv1COqqtLN6JXgEw6JNH/d6770b6583c107edcd712b4c24e69cea/Mark_Circluar_dark.svg",
+            "details": {
+              "size": 1017,
+              "image": {
+                "width": 150,
+                "height": 150
+              }
+            },
+            "fileName": "Mark_Circluar_dark.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "4uHTweJeansMH4fK4KjSrZ",
+        "type": "Asset",
+        "createdAt": "2023-09-27T15:11:25.808Z",
+        "updatedAt": "2023-09-27T15:11:38.382Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-09-27T15:11:38.382Z",
+        "firstPublishedAt": "2023-09-27T15:11:38.382Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Contentful ad 2"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ik5td6x5jo3k/4uHTweJeansMH4fK4KjSrZ/53e2526899a0e7c4191203f42f8fbbca/Contentful_ad_2.png",
+            "details": {
+              "size": 356259,
+              "image": {
+                "width": 5760,
+                "height": 3240
+              }
+            },
+            "fileName": "Contentful ad 2.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "5pbTIQYnEpiWPpdRdYvYOz",
+        "type": "Asset",
+        "createdAt": "2023-09-27T15:12:01.951Z",
+        "updatedAt": "2023-09-27T15:12:15.524Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-09-27T15:12:15.524Z",
+        "firstPublishedAt": "2023-09-27T15:12:15.524Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Contentful ad"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ik5td6x5jo3k/5pbTIQYnEpiWPpdRdYvYOz/61d613ce12839f34312f0e7c5a6ed220/Contentful_ad.png",
+            "details": {
+              "size": 342762,
+              "image": {
+                "width": 5760,
+                "height": 3240
+              }
+            },
+            "fileName": "Contentful ad.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "7mQkfM4F8Ht5uDetFQIZBM",
+        "type": "Asset",
+        "createdAt": "2023-09-29T13:38:59.151Z",
+        "updatedAt": "2023-09-29T13:40:04.905Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2023-09-29T13:40:04.905Z",
+        "firstPublishedAt": "2023-09-29T13:40:04.905Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "a night of the opera"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ik5td6x5jo3k/7mQkfM4F8Ht5uDetFQIZBM/d73858723f027132f34224700dc0e9a8/a_night_of_the_opera.png",
+            "details": {
+              "size": 61711,
+              "image": {
+                "width": 300,
+                "height": 300
+              }
+            },
+            "fileName": "a night of the opera.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "589u7QwrkttliuMoPIPYf3",
+        "type": "Asset",
+        "createdAt": "2023-09-29T13:38:59.167Z",
+        "updatedAt": "2023-09-29T13:40:04.912Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2023-09-29T13:40:04.912Z",
+        "firstPublishedAt": "2023-09-29T13:40:04.912Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "24k magic album"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ik5td6x5jo3k/589u7QwrkttliuMoPIPYf3/f6b95607ee5e33e403e6fdb63fb206a6/24k_magic_album.png",
+            "details": {
+              "size": 96221,
+              "image": {
+                "width": 300,
+                "height": 300
+              }
+            },
+            "fileName": "24k magic album.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "3kca3hQXttBXyp5ywsENqn",
+        "type": "Asset",
+        "createdAt": "2023-09-29T13:38:59.179Z",
+        "updatedAt": "2023-09-29T13:40:04.916Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2023-09-29T13:40:04.916Z",
+        "firstPublishedAt": "2023-09-29T13:40:04.916Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "taylor swift"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ik5td6x5jo3k/3kca3hQXttBXyp5ywsENqn/b1779b8d04207d3a5d7ed542c203a713/taylor_swift.png",
+            "details": {
+              "size": 118661,
+              "image": {
+                "width": 300,
+                "height": 300
+              }
+            },
+            "fileName": "taylor swift.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "2yBxgFXVVIb06fO1k118ew",
+        "type": "Asset",
+        "createdAt": "2023-09-29T13:38:59.220Z",
+        "updatedAt": "2023-09-29T13:40:04.910Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2023-09-29T13:40:04.910Z",
+        "firstPublishedAt": "2023-09-29T13:40:04.910Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "whitney"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ik5td6x5jo3k/2yBxgFXVVIb06fO1k118ew/b1fa01ff0b72036f02c20c9899761fbf/whitney.png",
+            "details": {
+              "size": 154894,
+              "image": {
+                "width": 300,
+                "height": 300
+              }
+            },
+            "fileName": "whitney.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "15L41GYl0YYM8RCr5pv41D",
+        "type": "Asset",
+        "createdAt": "2023-09-29T13:38:59.223Z",
+        "updatedAt": "2023-09-29T13:40:04.907Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2023-09-29T13:40:04.907Z",
+        "firstPublishedAt": "2023-09-29T13:40:04.907Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "hadestown"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ik5td6x5jo3k/15L41GYl0YYM8RCr5pv41D/110fbc3afc99226e9dcd41c4d3dbf60b/hadestown.jpg",
+            "details": {
+              "size": 195417,
+              "image": {
+                "width": 1200,
+                "height": 1200
+              }
+            },
+            "fileName": "hadestown.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "5nMCcKQCqWZGqWOygS1jgn",
+        "type": "Asset",
+        "createdAt": "2023-09-29T13:38:59.223Z",
+        "updatedAt": "2023-09-29T13:40:04.913Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2023-09-29T13:40:04.913Z",
+        "firstPublishedAt": "2023-09-29T13:40:04.913Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Queen-II-album-cover-820"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ik5td6x5jo3k/5nMCcKQCqWZGqWOygS1jgn/fb01a973575014f11704d611ddd6ba70/Queen-II-album-cover-820.jpg",
+            "details": {
+              "size": 68419,
+              "image": {
+                "width": 820,
+                "height": 820
+              }
+            },
+            "fileName": "Queen-II-album-cover-820.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "63XIHSjo25zQIM5cOaEGcS",
+        "type": "Asset",
+        "createdAt": "2023-09-29T13:39:00.050Z",
+        "updatedAt": "2023-09-29T13:40:04.900Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2023-09-29T13:40:04.900Z",
+        "firstPublishedAt": "2023-09-29T13:40:04.900Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "green day"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ik5td6x5jo3k/63XIHSjo25zQIM5cOaEGcS/02a6b326a17eebbaee5f565348854860/green_day.webp",
+            "details": {
+              "size": 45190,
+              "image": {
+                "width": 600,
+                "height": 600
+              }
+            },
+            "fileName": "green day.webp",
+            "contentType": "image/webp"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "1L2r1FJZr9QKW7qKpVuyZf",
+        "type": "Asset",
+        "createdAt": "2023-09-29T13:39:00.053Z",
+        "updatedAt": "2023-09-29T13:40:04.898Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2023-09-29T13:40:04.898Z",
+        "firstPublishedAt": "2023-09-29T13:40:04.898Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "selena"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ik5td6x5jo3k/1L2r1FJZr9QKW7qKpVuyZf/db710a1e2b70942c5ce2e342ce448ff5/selena.jpg",
+            "details": {
+              "size": 152853,
+              "image": {
+                "width": 1000,
+                "height": 1000
+              }
+            },
+            "fileName": "selena.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "6dGEUksvVobXtvDg1FaKN",
+        "type": "Asset",
+        "createdAt": "2023-09-29T13:39:00.083Z",
+        "updatedAt": "2023-09-29T13:40:04.903Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2023-09-29T13:40:04.903Z",
+        "firstPublishedAt": "2023-09-29T13:40:04.903Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "lauryn hill"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ik5td6x5jo3k/6dGEUksvVobXtvDg1FaKN/a97a2cf304faaf6622e7efcfe43b5a4a/lauryn_hill.webp",
+            "details": {
+              "size": 687086,
+              "image": {
+                "width": 1000,
+                "height": 1000
+              }
+            },
+            "fileName": "lauryn hill.webp",
+            "contentType": "image/webp"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "7s7COjmoamnKYPZC3pXD7S",
+        "type": "Asset",
+        "createdAt": "2023-09-29T13:39:00.126Z",
+        "updatedAt": "2023-09-29T13:40:04.895Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2023-09-29T13:40:04.895Z",
+        "firstPublishedAt": "2023-09-29T13:40:04.895Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "beyonce homecoming album"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ik5td6x5jo3k/7s7COjmoamnKYPZC3pXD7S/c84d2a5a49fc5893639afa1b16720b7d/beyonce_homecoming_album.webp",
+            "details": {
+              "size": 42570,
+              "image": {
+                "width": 600,
+                "height": 600
+              }
+            },
+            "fileName": "beyonce homecoming album.webp",
+            "contentType": "image/webp"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "vAtUtnXyBpDbyuBhf8Mq8",
+        "type": "Asset",
+        "createdAt": "2023-09-29T16:16:52.451Z",
+        "updatedAt": "2023-09-29T16:17:04.803Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-09-29T16:17:04.803Z",
+        "firstPublishedAt": "2023-09-29T16:17:04.803Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Earth Wind and Fire"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ik5td6x5jo3k/vAtUtnXyBpDbyuBhf8Mq8/d896a2b10f9617a4f3d6b142491b0281/earth_wind_and_fire.webp",
+            "details": {
+              "size": 73584,
+              "image": {
+                "width": 500,
+                "height": 500
+              }
+            },
+            "fileName": "earth wind and fire.webp",
+            "contentType": "image/webp"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "6nZkScKC9eVKIYh4pDmkKj",
+        "type": "Asset",
+        "createdAt": "2023-09-29T16:17:29.604Z",
+        "updatedAt": "2023-09-29T16:17:38.589Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-09-29T16:17:38.589Z",
+        "firstPublishedAt": "2023-09-29T16:17:38.589Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "bts young forever"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ik5td6x5jo3k/6nZkScKC9eVKIYh4pDmkKj/ca5008b8cb5b6984ec5847183db4c871/bts_young_forever.webp",
+            "details": {
+              "size": 18032,
+              "image": {
+                "width": 500,
+                "height": 500
+              }
+            },
+            "fileName": "bts young forever.webp",
+            "contentType": "image/webp"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "4lDgWBUp2ewiqZswct4kTZ",
+        "type": "Asset",
+        "createdAt": "2023-09-29T16:19:31.165Z",
+        "updatedAt": "2023-09-29T16:19:39.177Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2023-09-29T16:19:39.177Z",
+        "firstPublishedAt": "2023-09-29T16:19:39.177Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "adele"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ik5td6x5jo3k/4lDgWBUp2ewiqZswct4kTZ/1b6f8857390b1957f1a855307eefb718/adele.webp",
+            "details": {
+              "size": 25434,
+              "image": {
+                "width": 500,
+                "height": 500
+              }
+            },
+            "fileName": "adele.webp",
+            "contentType": "image/webp"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "ik5td6x5jo3k"
+          }
+        },
+        "id": "5LgZblIYNOoKiQYZXyKNLS",
+        "type": "Asset",
+        "createdAt": "2023-10-02T17:54:18.977Z",
+        "updatedAt": "2023-10-02T17:54:30.850Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2023-10-02T17:54:30.850Z",
+        "firstPublishedAt": "2023-10-02T17:54:30.850Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "70STWVx9vnqJ9tmgXWG1st"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Hadestown Cast"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/ik5td6x5jo3k/5LgZblIYNOoKiQYZXyKNLS/0a197b7a6969380158e2e61ccbe39a05/hadestown_cast.jpg",
+            "details": {
+              "size": 138036,
+              "image": {
+                "width": 1200,
+                "height": 800
+              }
+            },
+            "fileName": "hadestown cast.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
     }
   ],
   "locales": [
@@ -424,42 +4233,44 @@
       "optional": false,
       "sys": {
         "type": "Locale",
-        "id": "09Kvvkay28CRdOt7j8Ze7V",
+        "id": "3woFH2qjMNNh1RmJZ99X62",
         "version": 1,
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "p5asbbjx1p90"
+            "id": "ik5td6x5jo3k"
           }
         },
         "environment": {
           "sys": {
             "type": "Link",
             "linkType": "Environment",
-            "id": "master"
+            "id": "master",
+            "uuid": "b2736d3f-97b0-4c56-b476-50547a55070e"
           }
         },
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "70STWVx9vnqJ9tmgXWG1st"
           }
         },
-        "createdAt": "2020-04-22T09:10:22Z",
+        "createdAt": "2023-09-27T15:07:08Z",
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "70STWVx9vnqJ9tmgXWG1st"
           }
         },
-        "updatedAt": "2020-04-22T09:10:22Z"
+        "updatedAt": "2023-09-27T15:07:08Z"
       }
     }
   ],
-  "webhooks": [],
+  "webhooks": [
+  ],
   "roles": [
     {
       "name": "Author",
@@ -467,7 +4278,9 @@
       "policies": [
         {
           "effect": "allow",
-          "actions": ["create"],
+          "actions": [
+            "create"
+          ],
           "constraint": {
             "and": [
               {
@@ -483,7 +4296,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["read"],
+          "actions": [
+            "read"
+          ],
           "constraint": {
             "and": [
               {
@@ -499,7 +4314,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["update"],
+          "actions": [
+            "update"
+          ],
           "constraint": {
             "and": [
               {
@@ -515,7 +4332,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["create"],
+          "actions": [
+            "create"
+          ],
           "constraint": {
             "and": [
               {
@@ -531,7 +4350,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["read"],
+          "actions": [
+            "read"
+          ],
           "constraint": {
             "and": [
               {
@@ -547,7 +4368,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["update"],
+          "actions": [
+            "update"
+          ],
           "constraint": {
             "and": [
               {
@@ -563,39 +4386,47 @@
         }
       ],
       "permissions": {
-        "ContentModel": ["read"],
-        "Settings": [],
-        "ContentDelivery": [],
-        "Environments": [],
-        "EnvironmentAliases": []
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
       },
       "sys": {
         "type": "Role",
-        "id": "09Ly1xcRRW9vpcvEXo7Q9R",
+        "id": "3wPYNDO45tqomMVEU021se",
         "version": 0,
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "p5asbbjx1p90"
+            "id": "ik5td6x5jo3k"
           }
         },
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "70STWVx9vnqJ9tmgXWG1st"
           }
         },
-        "createdAt": "2020-04-22T09:10:22Z",
+        "createdAt": "2023-09-27T15:07:09Z",
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "70STWVx9vnqJ9tmgXWG1st"
           }
         },
-        "updatedAt": "2020-04-22T09:10:22Z"
+        "updatedAt": "2023-09-27T15:07:09Z"
       }
     },
     {
@@ -636,39 +4467,47 @@
         }
       ],
       "permissions": {
-        "ContentModel": ["read"],
-        "Settings": [],
-        "ContentDelivery": [],
-        "Environments": [],
-        "EnvironmentAliases": []
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
       },
       "sys": {
         "type": "Role",
-        "id": "09M0BGG76Wp2UNMBgSxKGv",
+        "id": "3wQDDlHW30pZOiR7Rz2ukW",
         "version": 0,
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "p5asbbjx1p90"
+            "id": "ik5td6x5jo3k"
           }
         },
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "70STWVx9vnqJ9tmgXWG1st"
           }
         },
-        "createdAt": "2020-04-22T09:10:22Z",
+        "createdAt": "2023-09-27T15:07:09Z",
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "70STWVx9vnqJ9tmgXWG1st"
           }
         },
-        "updatedAt": "2020-04-22T09:10:22Z"
+        "updatedAt": "2023-09-27T15:07:09Z"
       }
     },
     {
@@ -677,7 +4516,9 @@
       "policies": [
         {
           "effect": "allow",
-          "actions": ["create"],
+          "actions": [
+            "create"
+          ],
           "constraint": {
             "and": [
               {
@@ -693,7 +4534,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["create"],
+          "actions": [
+            "create"
+          ],
           "constraint": {
             "and": [
               {
@@ -709,7 +4552,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["read"],
+          "actions": [
+            "read"
+          ],
           "constraint": {
             "and": [
               {
@@ -733,7 +4578,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["update"],
+          "actions": [
+            "update"
+          ],
           "constraint": {
             "and": [
               {
@@ -764,7 +4611,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["delete"],
+          "actions": [
+            "delete"
+          ],
           "constraint": {
             "and": [
               {
@@ -788,7 +4637,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["read"],
+          "actions": [
+            "read"
+          ],
           "constraint": {
             "and": [
               {
@@ -812,7 +4663,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["update"],
+          "actions": [
+            "update"
+          ],
           "constraint": {
             "and": [
               {
@@ -843,7 +4696,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["delete"],
+          "actions": [
+            "delete"
+          ],
           "constraint": {
             "and": [
               {
@@ -867,39 +4722,47 @@
         }
       ],
       "permissions": {
-        "ContentModel": ["read"],
-        "Settings": [],
-        "ContentDelivery": [],
-        "Environments": [],
-        "EnvironmentAliases": []
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
       },
       "sys": {
         "type": "Role",
-        "id": "09MrKDfvFxjsr5PMEJjLBN",
+        "id": "3wReEjrTEBHrYzxxTxZC2K",
         "version": 0,
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "p5asbbjx1p90"
+            "id": "ik5td6x5jo3k"
           }
         },
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "70STWVx9vnqJ9tmgXWG1st"
           }
         },
-        "createdAt": "2020-04-22T09:10:22Z",
+        "createdAt": "2023-09-27T15:07:09Z",
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "70STWVx9vnqJ9tmgXWG1st"
           }
         },
-        "updatedAt": "2020-04-22T09:10:22Z"
+        "updatedAt": "2023-09-27T15:07:09Z"
       }
     },
     {
@@ -908,7 +4771,9 @@
       "policies": [
         {
           "effect": "allow",
-          "actions": ["read"],
+          "actions": [
+            "read"
+          ],
           "constraint": {
             "and": [
               {
@@ -924,7 +4789,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["read"],
+          "actions": [
+            "read"
+          ],
           "constraint": {
             "and": [
               {
@@ -940,7 +4807,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["update"],
+          "actions": [
+            "update"
+          ],
           "constraint": {
             "and": [
               {
@@ -963,7 +4832,9 @@
         },
         {
           "effect": "allow",
-          "actions": ["update"],
+          "actions": [
+            "update"
+          ],
           "constraint": {
             "and": [
               {
@@ -986,39 +4857,47 @@
         }
       ],
       "permissions": {
-        "ContentModel": ["read"],
-        "Settings": [],
-        "ContentDelivery": [],
-        "Environments": [],
-        "EnvironmentAliases": []
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
       },
       "sys": {
         "type": "Role",
-        "id": "09MWbiu0nlnFuYVtcAU3wf",
+        "id": "3wRUBVF5JJQ9YIFSCFlvvA",
         "version": 0,
         "space": {
           "sys": {
             "type": "Link",
             "linkType": "Space",
-            "id": "p5asbbjx1p90"
+            "id": "ik5td6x5jo3k"
           }
         },
         "createdBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "70STWVx9vnqJ9tmgXWG1st"
           }
         },
-        "createdAt": "2020-04-22T09:10:22Z",
+        "createdAt": "2023-09-27T15:07:09Z",
         "updatedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "066RqBikAjzKy0SWUEtFvH"
+            "id": "70STWVx9vnqJ9tmgXWG1st"
           }
         },
-        "updatedAt": "2020-04-22T09:10:22Z"
+        "updatedAt": "2023-09-27T15:07:09Z"
       }
     }
   ]
